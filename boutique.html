@@ -1,0 +1,2049 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Angels Boutique – Premium bridal blouse stitching, designer blouses, maggam work & women's custom wear in Visakhapatnam. 25+ years of craftsmanship. 333+ reviews. 4.5★ rated.">
+<meta name="keywords" content="boutique in Visakhapatnam, designer boutique Vizag, bridal blouse stitching Vizag, maggam work Vizag, ladies tailor Visakhapatnam, bridal boutique near me">
+<meta property="og:title" content="Angels Boutique – Crafted to Fit. Designed to Shine.">
+<meta property="og:description" content="25+ years of premium bridal & fashion design in Visakhapatnam. Custom blouses, maggam work & designer wear.">
+<meta property="og:type" content="website">
+<title>Angels Boutique | Bridal & Designer Fashion Studio – Visakhapatnam</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --maroon: #5B1023;
+  --maroon-deep: #3d0a17;
+  --gold: #C8A15A;
+  --gold-light: #e0c07a;
+  --ivory: #F8F4EE;
+  --ivory-dark: #ede8df;
+  --charcoal: #1A1A1A;
+  --charcoal-soft: #3a3a3a;
+  --rose: #c4897a;
+  --white: #ffffff;
+  --text-muted: #6b6b6b;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; font-size: 16px; }
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--ivory);
+  color: var(--charcoal);
+  overflow-x: hidden;
+  line-height: 1.7;
+}
+
+/* ──────────────────────── TYPOGRAPHY ──────────────────────── */
+.display { font-family: 'Cormorant Garamond', serif; }
+
+h1, h2, h3, h4 {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 500;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+}
+
+.section-eyebrow {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--gold);
+  display: block;
+  margin-bottom: 0.75rem;
+}
+
+/* ──────────────────────── GOLD THREAD DIVIDER (signature) ──── */
+.thread-divider {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 2.5rem auto;
+  max-width: 260px;
+}
+.thread-divider::before,
+.thread-divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--gold), transparent);
+}
+.thread-divider svg {
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+  color: var(--gold);
+}
+
+/* ──────────────────────── NAVIGATION ──────────────────────── */
+nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 1000;
+  padding: 1.4rem 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.4s ease;
+}
+nav.scrolled {
+  background: rgba(248,244,238,0.97);
+  backdrop-filter: blur(12px);
+  padding: 1rem 3rem;
+  box-shadow: 0 1px 30px rgba(91,16,35,0.08);
+}
+.nav-logo {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: var(--white);
+  text-decoration: none;
+  letter-spacing: 0.05em;
+  transition: color 0.4s;
+}
+nav.scrolled .nav-logo { color: var(--maroon); }
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  list-style: none;
+}
+.nav-links a {
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.85);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+nav.scrolled .nav-links a { color: var(--charcoal-soft); }
+.nav-links a:hover { color: var(--gold) !important; }
+
+.nav-cta {
+  background: var(--gold);
+  color: var(--charcoal) !important;
+  padding: 0.55rem 1.4rem;
+  border-radius: 2px;
+  font-weight: 600 !important;
+  transition: background 0.3s, transform 0.2s !important;
+}
+.nav-cta:hover { background: var(--gold-light) !important; transform: translateY(-1px); }
+
+.nav-hamburger { display: none; cursor: pointer; flex-direction: column; gap: 5px; }
+.nav-hamburger span { width: 24px; height: 1.5px; background: white; transition: all 0.3s; }
+nav.scrolled .nav-hamburger span { background: var(--charcoal); }
+
+/* ──────────────────────── HERO ──────────────────────── */
+#hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background: var(--maroon-deep);
+}
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(135deg, rgba(91,16,35,0.88) 0%, rgba(58,10,23,0.75) 50%, rgba(30,5,12,0.85) 100%),
+    url('https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=1800&q=80') center/cover no-repeat;
+  transform: scale(1.05);
+  animation: heroZoom 18s ease-in-out infinite alternate;
+}
+@keyframes heroZoom { from { transform: scale(1.05); } to { transform: scale(1.12); } }
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 8rem 3rem 5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+  width: 100%;
+}
+.hero-text { opacity: 0; animation: fadeUp 1.2s 0.3s ease forwards; }
+@keyframes fadeUp { from { opacity:0; transform:translateY(30px); } to { opacity:1; transform:translateY(0); } }
+
+.hero-eyebrow {
+  display: inline-block;
+  font-size: 0.68rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--gold);
+  border-left: 2px solid var(--gold);
+  padding-left: 0.8rem;
+  margin-bottom: 1.5rem;
+}
+.hero-headline {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(2.8rem, 5vw, 4.8rem);
+  font-weight: 400;
+  color: var(--white);
+  margin-bottom: 1.5rem;
+  line-height: 1.1;
+}
+.hero-headline em {
+  font-style: italic;
+  color: var(--gold);
+}
+.hero-sub {
+  font-size: 1rem;
+  color: rgba(255,255,255,0.7);
+  max-width: 500px;
+  margin-bottom: 2.5rem;
+  font-weight: 300;
+}
+.hero-btns {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 3.5rem;
+}
+.btn-primary {
+  background: var(--gold);
+  color: var(--charcoal);
+  padding: 0.9rem 2.2rem;
+  border: none;
+  border-radius: 2px;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.btn-primary:hover { background: var(--gold-light); transform: translateY(-2px); box-shadow: 0 8px 25px rgba(200,161,90,0.35); }
+
+.btn-outline {
+  background: transparent;
+  color: var(--white);
+  padding: 0.9rem 2.2rem;
+  border: 1px solid rgba(255,255,255,0.4);
+  border-radius: 2px;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.btn-outline:hover { border-color: var(--gold); color: var(--gold); }
+
+.hero-metrics {
+  display: flex;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+}
+.metric { }
+.metric-num {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--gold);
+  display: block;
+  line-height: 1;
+}
+.metric-label {
+  font-size: 0.65rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.55);
+  margin-top: 0.25rem;
+}
+
+.hero-visual {
+  position: relative;
+  opacity: 0;
+  animation: fadeUp 1.2s 0.6s ease forwards;
+}
+.hero-card {
+  background: rgba(255,255,255,0.06);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(200,161,90,0.25);
+  border-radius: 4px;
+  padding: 2rem;
+  text-align: center;
+}
+.hero-card-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.4rem;
+  color: var(--gold);
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+.hero-services-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+.hero-services-list li {
+  font-size: 0.82rem;
+  color: rgba(255,255,255,0.8);
+  padding: 0.6rem 0;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  letter-spacing: 0.04em;
+}
+.hero-services-list li:last-child { border-bottom: none; }
+
+.scroll-indicator {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  color: rgba(255,255,255,0.4);
+  font-size: 0.65rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  animation: float 2s ease-in-out infinite;
+  z-index: 2;
+}
+.scroll-indicator::after {
+  content: '';
+  width: 1px;
+  height: 40px;
+  background: linear-gradient(to bottom, rgba(200,161,90,0.6), transparent);
+  animation: scrollLine 2s ease-in-out infinite;
+}
+@keyframes float { 0%,100%{transform:translateX(-50%) translateY(0)} 50%{transform:translateX(-50%) translateY(8px)} }
+@keyframes scrollLine { 0%{opacity:0;transform:scaleY(0);transform-origin:top} 50%{opacity:1;transform:scaleY(1)} 100%{opacity:0} }
+
+/* ──────────────────────── SECTIONS SHARED ──────────────────────── */
+section { padding: 7rem 0; }
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 3rem;
+}
+
+.section-header { text-align: center; margin-bottom: 4rem; }
+.section-title {
+  font-size: clamp(2rem, 3.5vw, 3.2rem);
+  font-weight: 400;
+  color: var(--maroon);
+  margin-bottom: 1rem;
+}
+.section-sub {
+  font-size: 1.05rem;
+  color: var(--text-muted);
+  max-width: 560px;
+  margin: 0 auto;
+  font-weight: 300;
+}
+
+/* Reveal on scroll */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.reveal-delay-1 { transition-delay: 0.15s; }
+.reveal-delay-2 { transition-delay: 0.3s; }
+.reveal-delay-3 { transition-delay: 0.45s; }
+.reveal-delay-4 { transition-delay: 0.6s; }
+
+/* ──────────────────────── ABOUT ──────────────────────── */
+#about { background: var(--ivory); }
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6rem;
+  align-items: center;
+}
+.about-img-wrap {
+  position: relative;
+}
+.about-img-main {
+  width: 100%;
+  height: 540px;
+  object-fit: cover;
+  border-radius: 2px;
+  display: block;
+}
+.about-img-accent {
+  position: absolute;
+  bottom: -2rem;
+  right: -2rem;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border: 6px solid var(--ivory);
+  border-radius: 2px;
+}
+.about-badge {
+  position: absolute;
+  top: 2rem;
+  left: -2rem;
+  background: var(--maroon);
+  color: var(--white);
+  padding: 1.2rem 1.5rem;
+  text-align: center;
+  border-radius: 2px;
+}
+.about-badge-num {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: var(--gold);
+  display: block;
+  line-height: 1;
+}
+.about-badge-text {
+  font-size: 0.65rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  opacity: 0.8;
+}
+
+.about-content h2 { font-size: clamp(2rem, 3vw, 3rem); color: var(--maroon); margin-bottom: 1.5rem; }
+.about-content p { color: var(--charcoal-soft); margin-bottom: 1.2rem; font-weight: 300; line-height: 1.85; }
+.about-content p strong { color: var(--maroon); font-weight: 600; }
+.about-features {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.about-feat {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: 1rem;
+  background: var(--ivory-dark);
+  border-radius: 2px;
+  border-left: 3px solid var(--gold);
+}
+.about-feat-icon { font-size: 1.2rem; flex-shrink: 0; }
+.about-feat-text { font-size: 0.82rem; font-weight: 500; color: var(--charcoal); }
+
+/* ──────────────────────── BRAND STORY ──────────────────────── */
+#story { background: var(--maroon); padding: 7rem 0; overflow: hidden; }
+#story .section-title { color: var(--gold); }
+#story .section-eyebrow { color: rgba(200,161,90,0.7); }
+#story .section-sub { color: rgba(255,255,255,0.6); }
+
+.timeline {
+  display: flex;
+  gap: 0;
+  margin-top: 4rem;
+  position: relative;
+  overflow-x: auto;
+  padding-bottom: 1rem;
+}
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 4rem;
+  left: 0; right: 0;
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--gold), var(--gold), transparent);
+  opacity: 0.35;
+}
+.timeline-item {
+  flex: 1;
+  min-width: 180px;
+  text-align: center;
+  padding: 0 1.5rem;
+  position: relative;
+}
+.timeline-year {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--gold);
+  display: block;
+  margin-bottom: 0.75rem;
+}
+.timeline-dot {
+  width: 10px;
+  height: 10px;
+  background: var(--gold);
+  border-radius: 50%;
+  margin: 0.75rem auto;
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 0 0 4px rgba(200,161,90,0.2);
+}
+.timeline-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.05rem;
+  color: var(--white);
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+.timeline-desc {
+  font-size: 0.78rem;
+  color: rgba(255,255,255,0.5);
+  line-height: 1.6;
+}
+
+/* ──────────────────────── SERVICES ──────────────────────── */
+#services { background: var(--ivory); }
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+.service-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 2px;
+  cursor: pointer;
+  background: var(--white);
+  box-shadow: 0 2px 20px rgba(0,0,0,0.05);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+.service-card:hover { transform: translateY(-6px); box-shadow: 0 12px 40px rgba(91,16,35,0.12); }
+.service-card-img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.6s ease;
+}
+.service-card:hover .service-card-img { transform: scale(1.05); }
+.service-card-body {
+  padding: 1.5rem;
+  border-top: 2px solid var(--gold);
+}
+.service-card-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.3rem;
+  color: var(--maroon);
+  margin-bottom: 0.5rem;
+}
+.service-card-desc { font-size: 0.82rem; color: var(--text-muted); line-height: 1.7; }
+
+/* ──────────────────────── WHY CHOOSE US ──────────────────────── */
+#why { background: var(--ivory-dark); }
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+.why-card {
+  text-align: center;
+  padding: 2.5rem 1.5rem;
+  background: var(--ivory);
+  border-radius: 2px;
+  position: relative;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.why-card::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 2px;
+  background: linear-gradient(to right, transparent, var(--gold), transparent);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.why-card:hover { transform: translateY(-4px); box-shadow: 0 8px 30px rgba(91,16,35,0.08); }
+.why-card:hover::after { opacity: 1; }
+.why-icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+.why-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.2rem;
+  color: var(--maroon);
+  margin-bottom: 0.6rem;
+}
+.why-desc { font-size: 0.82rem; color: var(--text-muted); line-height: 1.7; }
+
+/* ──────────────────────── GALLERY ──────────────────────── */
+#gallery { background: var(--ivory); }
+.gallery-filters {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-bottom: 2.5rem;
+  flex-wrap: wrap;
+}
+.filter-btn {
+  padding: 0.5rem 1.4rem;
+  border: 1px solid var(--gold);
+  background: transparent;
+  color: var(--charcoal);
+  font-family: 'Inter', sans-serif;
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 2px;
+  transition: all 0.3s;
+}
+.filter-btn.active, .filter-btn:hover {
+  background: var(--maroon);
+  border-color: var(--maroon);
+  color: var(--white);
+}
+.gallery-masonry {
+  columns: 3;
+  column-gap: 1rem;
+}
+.gallery-item {
+  break-inside: avoid;
+  margin-bottom: 1rem;
+  overflow: hidden;
+  border-radius: 2px;
+  position: relative;
+  cursor: pointer;
+}
+.gallery-item img {
+  width: 100%;
+  display: block;
+  transition: transform 0.5s ease;
+}
+.gallery-item:hover img { transform: scale(1.04); }
+.gallery-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(91,16,35,0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s;
+}
+.gallery-item:hover .gallery-overlay { background: rgba(91,16,35,0.4); }
+.gallery-overlay-icon {
+  color: white;
+  font-size: 1.5rem;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.gallery-item:hover .gallery-overlay-icon { opacity: 1; }
+
+/* ──────────────────────── CUSTOMER EXPERIENCE ──────────────────────── */
+#experience { background: var(--maroon); }
+.experience-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: center;
+}
+.experience-img {
+  width: 100%;
+  height: 520px;
+  object-fit: cover;
+  border-radius: 2px;
+}
+.experience-content { }
+.experience-content h2 {
+  font-size: clamp(2rem, 3vw, 3rem);
+  color: var(--gold);
+  margin-bottom: 1.5rem;
+  font-style: italic;
+}
+.experience-content p {
+  color: rgba(255,255,255,0.7);
+  margin-bottom: 1.2rem;
+  font-weight: 300;
+  line-height: 1.85;
+}
+.experience-quote {
+  border-left: 3px solid var(--gold);
+  padding-left: 1.5rem;
+  margin: 2rem 0;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.25rem;
+  font-style: italic;
+  color: var(--gold);
+  line-height: 1.6;
+}
+
+/* ──────────────────────── PROCESS ──────────────────────── */
+#process { background: var(--ivory-dark); }
+.process-steps {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0;
+  position: relative;
+}
+.process-steps::before {
+  content: '';
+  position: absolute;
+  top: 2.5rem;
+  left: 10%;
+  right: 10%;
+  height: 1px;
+  background: linear-gradient(to right, var(--gold), var(--gold));
+  opacity: 0.3;
+}
+.process-step {
+  text-align: center;
+  padding: 0 1rem;
+  position: relative;
+}
+.step-num-wrap {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  background: var(--ivory);
+  border: 1px solid var(--gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+  position: relative;
+  z-index: 1;
+  transition: all 0.3s;
+}
+.process-step:hover .step-num-wrap {
+  background: var(--maroon);
+  border-color: var(--maroon);
+}
+.step-num {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--gold);
+}
+.process-step:hover .step-num { color: var(--white); }
+.step-icon { font-size: 1.1rem; }
+.step-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.05rem;
+  color: var(--maroon);
+  margin-bottom: 0.5rem;
+}
+.step-desc { font-size: 0.75rem; color: var(--text-muted); line-height: 1.6; }
+
+/* ──────────────────────── TESTIMONIALS ──────────────────────── */
+#testimonials { background: var(--ivory); }
+.testimonials-header { margin-bottom: 1.5rem; }
+.rating-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+}
+.rating-score {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 3rem;
+  font-weight: 600;
+  color: var(--maroon);
+  line-height: 1;
+}
+.stars { font-size: 1.2rem; }
+.rating-meta { font-size: 0.78rem; color: var(--text-muted); letter-spacing: 0.05em; }
+.rating-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--maroon);
+  color: white;
+  padding: 0.5rem 1.2rem;
+  border-radius: 2px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+}
+
+.testimonials-carousel {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+.testimonial-card {
+  background: var(--white);
+  border-radius: 2px;
+  padding: 2rem;
+  position: relative;
+  border-bottom: 3px solid var(--gold);
+  box-shadow: 0 2px 20px rgba(0,0,0,0.04);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.testimonial-card:hover { transform: translateY(-4px); box-shadow: 0 8px 35px rgba(91,16,35,0.1); }
+.testimonial-quote-mark {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 4rem;
+  line-height: 0.5;
+  color: var(--gold);
+  opacity: 0.4;
+  margin-bottom: 0.5rem;
+}
+.testimonial-text {
+  font-size: 0.88rem;
+  color: var(--charcoal-soft);
+  line-height: 1.8;
+  font-style: italic;
+  margin-bottom: 1.5rem;
+}
+.testimonial-author {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+.testimonial-avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--maroon), var(--rose));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+.testimonial-name {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--charcoal);
+}
+.testimonial-label { font-size: 0.7rem; color: var(--text-muted); }
+.stars-small { font-size: 0.8rem; color: #f5a623; }
+
+/* ──────────────────────── FAQ ──────────────────────── */
+#faq { background: var(--ivory-dark); }
+.faq-list { max-width: 780px; margin: 0 auto; }
+.faq-item {
+  border-bottom: 1px solid rgba(91,16,35,0.1);
+  overflow: hidden;
+}
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4rem 0;
+  cursor: pointer;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.1rem;
+  color: var(--maroon);
+  font-weight: 500;
+  gap: 1rem;
+  transition: color 0.2s;
+}
+.faq-question:hover { color: var(--gold); }
+.faq-icon {
+  font-size: 1.2rem;
+  color: var(--gold);
+  flex-shrink: 0;
+  transition: transform 0.3s;
+}
+.faq-item.open .faq-icon { transform: rotate(45deg); }
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+}
+.faq-answer-inner {
+  padding: 0 0 1.5rem;
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  line-height: 1.8;
+}
+
+/* ──────────────────────── CONTACT ──────────────────────── */
+#contact { background: var(--ivory); }
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+}
+.contact-info { }
+.contact-info h2 {
+  font-size: clamp(2rem, 3vw, 2.8rem);
+  color: var(--maroon);
+  margin-bottom: 2rem;
+}
+.contact-detail {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  align-items: flex-start;
+}
+.contact-detail-icon {
+  width: 42px;
+  height: 42px;
+  background: var(--maroon);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+.contact-detail-text { }
+.contact-detail-label {
+  font-size: 0.65rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gold);
+  font-weight: 600;
+}
+.contact-detail-value {
+  font-size: 0.92rem;
+  color: var(--charcoal);
+  margin-top: 0.2rem;
+  line-height: 1.5;
+}
+.contact-hours {
+  background: var(--ivory-dark);
+  padding: 1.5rem;
+  border-radius: 2px;
+  border-left: 3px solid var(--gold);
+  margin-top: 1.5rem;
+}
+.contact-hours-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.05rem;
+  color: var(--maroon);
+  margin-bottom: 0.75rem;
+}
+.hours-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  padding: 0.3rem 0;
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+}
+.hours-row:last-child { border-bottom: none; }
+
+.contact-form-wrap { }
+.contact-form-wrap h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.6rem;
+  color: var(--maroon);
+  margin-bottom: 1.5rem;
+}
+.form-group { margin-bottom: 1.2rem; }
+.form-group label {
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--charcoal-soft);
+  margin-bottom: 0.4rem;
+}
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 0.85rem 1rem;
+  border: 1px solid rgba(91,16,35,0.15);
+  border-radius: 2px;
+  background: var(--ivory);
+  font-family: 'Inter', sans-serif;
+  font-size: 0.88rem;
+  color: var(--charcoal);
+  transition: border-color 0.3s;
+  outline: none;
+}
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: var(--gold);
+  box-shadow: 0 0 0 3px rgba(200,161,90,0.1);
+}
+.form-group textarea { min-height: 120px; resize: vertical; }
+.btn-submit {
+  width: 100%;
+  padding: 1rem;
+  background: var(--maroon);
+  color: var(--white);
+  border: none;
+  border-radius: 2px;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+.btn-submit:hover { background: var(--maroon-deep); transform: translateY(-1px); }
+
+.map-embed {
+  width: 100%;
+  height: 250px;
+  border: none;
+  border-radius: 2px;
+  margin-top: 1.5rem;
+  filter: sepia(20%) saturate(0.85);
+}
+
+/* ──────────────────────── FINAL CTA ──────────────────────── */
+#cta {
+  background: linear-gradient(135deg, var(--maroon-deep) 0%, var(--maroon) 100%);
+  padding: 8rem 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+#cta::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: url('https://images.unsplash.com/photo-1558769132-cb1aea458c5e?w=1400&q=70') center/cover;
+  opacity: 0.08;
+}
+.cta-content { position: relative; z-index: 1; }
+.cta-content h2 {
+  font-size: clamp(2rem, 4vw, 3.8rem);
+  color: var(--white);
+  margin-bottom: 1.5rem;
+  font-weight: 300;
+}
+.cta-content h2 em { color: var(--gold); font-style: italic; }
+.cta-content p {
+  font-size: 1.05rem;
+  color: rgba(255,255,255,0.65);
+  max-width: 600px;
+  margin: 0 auto 2.5rem;
+  font-weight: 300;
+  line-height: 1.8;
+}
+.cta-btns { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+
+/* ──────────────────────── FOOTER ──────────────────────── */
+footer {
+  background: var(--charcoal);
+  color: rgba(255,255,255,0.6);
+  padding: 5rem 0 2rem;
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 3rem;
+  margin-bottom: 3rem;
+}
+.footer-brand { }
+.footer-logo {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.8rem;
+  color: var(--white);
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+.footer-tagline {
+  font-size: 0.7rem;
+  color: var(--gold);
+  letter-spacing: 0.08em;
+  margin-bottom: 1rem;
+}
+.footer-brand p { font-size: 0.82rem; line-height: 1.8; max-width: 280px; }
+.footer-col h4 {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 1.2rem;
+}
+.footer-col ul { list-style: none; }
+.footer-col ul li { margin-bottom: 0.6rem; }
+.footer-col ul a {
+  font-size: 0.82rem;
+  color: rgba(255,255,255,0.5);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.footer-col ul a:hover { color: var(--gold); }
+.footer-col p { font-size: 0.82rem; line-height: 1.8; }
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.08);
+  padding-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  font-size: 0.72rem;
+  color: rgba(255,255,255,0.3);
+}
+.footer-bottom-tagline {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  color: var(--gold);
+  font-size: 0.85rem;
+}
+
+/* ──────────────────────── FLOATING ELEMENTS ──────────────────────── */
+.whatsapp-float {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 56px;
+  height: 56px;
+  background: #25D366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  box-shadow: 0 4px 20px rgba(37,211,102,0.4);
+  z-index: 999;
+  text-decoration: none;
+  transition: transform 0.3s, box-shadow 0.3s;
+  animation: pulse 3s ease-in-out infinite;
+}
+.whatsapp-float:hover { transform: scale(1.1); box-shadow: 0 8px 30px rgba(37,211,102,0.5); }
+@keyframes pulse { 0%,100%{box-shadow:0 4px 20px rgba(37,211,102,0.4)} 50%{box-shadow:0 4px 30px rgba(37,211,102,0.7)} }
+
+.mobile-cta-bar {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0; right: 0;
+  z-index: 998;
+  background: var(--maroon);
+  padding: 0.75rem 1rem;
+  justify-content: center;
+  gap: 1rem;
+}
+.mobile-cta-bar a {
+  flex: 1;
+  text-align: center;
+  padding: 0.7rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+  border-radius: 2px;
+}
+.mobile-cta-bar .m-call { background: var(--gold); color: var(--charcoal); }
+.mobile-cta-bar .m-wa { background: #25D366; color: white; }
+
+/* ──────────────────────── LIGHTBOX ──────────────────────── */
+.lightbox {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.92);
+  z-index: 2000;
+  align-items: center;
+  justify-content: center;
+}
+.lightbox.open { display: flex; }
+.lightbox img {
+  max-width: 90vw;
+  max-height: 90vh;
+  object-fit: contain;
+  border-radius: 2px;
+}
+.lightbox-close {
+  position: absolute;
+  top: 1.5rem; right: 1.5rem;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+.lightbox-close:hover { opacity: 1; }
+
+/* ──────────────────────── MOBILE ──────────────────────── */
+@media (max-width: 768px) {
+  nav { padding: 1.2rem 1.5rem; }
+  nav.scrolled { padding: 0.85rem 1.5rem; }
+  .nav-links { display: none; }
+  .nav-links.open {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    inset: 0;
+    background: var(--maroon);
+    padding: 6rem 2rem 3rem;
+    z-index: 999;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+  }
+  .nav-links.open a { font-size: 1.2rem; color: var(--white) !important; }
+  .nav-hamburger { display: flex; z-index: 1001; position: relative; }
+  .hero-content { grid-template-columns: 1fr; padding: 7rem 1.5rem 4rem; gap: 2rem; }
+  .hero-visual { display: none; }
+  .about-grid, .experience-grid, .contact-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+  .about-img-accent, .about-badge { display: none; }
+  .about-img-main { height: 300px; }
+  .experience-img { height: 280px; }
+  .services-grid { grid-template-columns: 1fr; }
+  .why-grid { grid-template-columns: 1fr 1fr; }
+  .timeline { flex-direction: column; }
+  .timeline::before { display: none; }
+  .timeline-item { border-bottom: 1px solid rgba(200,161,90,0.2); padding: 1.5rem 0; min-width: unset; }
+  .process-steps { grid-template-columns: 1fr 1fr; gap: 2rem; }
+  .process-steps::before { display: none; }
+  .testimonials-carousel { grid-template-columns: 1fr; }
+  .gallery-masonry { columns: 2; }
+  .footer-grid { grid-template-columns: 1fr; gap: 2rem; }
+  .footer-bottom { flex-direction: column; text-align: center; }
+  .mobile-cta-bar { display: flex; }
+  section { padding: 4rem 0; }
+  .container { padding: 0 1.5rem; }
+  .whatsapp-float { bottom: 5.5rem; right: 1rem; }
+}
+@media (max-width: 480px) {
+  .why-grid { grid-template-columns: 1fr; }
+  .process-steps { grid-template-columns: 1fr; }
+  .hero-metrics { gap: 1.5rem; }
+  .gallery-masonry { columns: 1; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}
+</style>
+
+<!-- Schema Markup -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ClothingStore",
+  "name": "Angels Boutique",
+  "description": "Premium bridal blouse stitching, designer blouses, maggam work and women's custom wear in Visakhapatnam. 25+ years of craftsmanship.",
+  "image": "https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=800",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Shop No. 9, First Floor, Above Crown Bakery, NAD Junction, Shanti Nagar, NSTL",
+    "addressLocality": "Visakhapatnam",
+    "addressRegion": "Andhra Pradesh",
+    "postalCode": "530027",
+    "addressCountry": "IN"
+  },
+  "telephone": "+919393121303",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.5",
+    "reviewCount": "333"
+  },
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+    "opens": "10:00",
+    "closes": "20:00"
+  }
+}
+</script>
+</head>
+
+<body>
+
+<!-- ── NAVIGATION ── -->
+<nav id="navbar">
+  <a href="#" class="nav-logo">Angels Boutique</a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#testimonials">Reviews</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#contact" class="nav-cta">Book Consultation</a></li>
+  </ul>
+  <div class="nav-hamburger" id="hamburger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- ── HERO ── -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-content">
+    <div class="hero-text">
+      <span class="hero-eyebrow">Visakhapatnam's Premier Bridal &amp; Fashion Studio</span>
+      <h1 class="hero-headline">
+        Crafted to <em>Fit.</em><br>Designed to <em>Shine.</em>
+      </h1>
+      <p class="hero-sub">For over 25 years, Angels Boutique has helped women across Visakhapatnam celebrate life's most special moments through beautifully crafted custom fashion, bridal blouses, maggam work, and designer creations.</p>
+      <div class="hero-btns">
+        <a href="#contact" class="btn-primary">✦ Book Consultation</a>
+        <a href="https://wa.me/919393121303?text=Hello%2C%20I%27d%20like%20to%20inquire%20about%20your%20services." class="btn-outline" target="_blank">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.101.544 4.098 1.508 5.83L0 24l6.335-1.652A11.954 11.954 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.007-1.37l-.361-.214-3.72.976.99-3.616-.235-.375A9.818 9.818 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182c5.43 0 9.818 4.388 9.818 9.818 0 5.43-4.388 9.818-9.818 9.818z"/></svg>
+          WhatsApp Us
+        </a>
+      </div>
+      <div class="hero-metrics">
+        <div class="metric">
+          <span class="metric-num">25+</span>
+          <span class="metric-label">Years Experience</span>
+        </div>
+        <div class="metric">
+          <span class="metric-num">333+</span>
+          <span class="metric-label">Google Reviews</span>
+        </div>
+        <div class="metric">
+          <span class="metric-num">4.5★</span>
+          <span class="metric-label">Rating</span>
+        </div>
+        <div class="metric">
+          <span class="metric-num">1000s</span>
+          <span class="metric-label">Happy Customers</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-card">
+        <p class="hero-card-title">Our Signature Services</p>
+        <ul class="hero-services-list">
+          <li>✦ Bridal Blouse Stitching</li>
+          <li>✦ Designer Blouses</li>
+          <li>✦ Maggam Work</li>
+          <li>✦ Women's Custom Wear</li>
+          <li>✦ Kids Occasion Wear</li>
+          <li>✦ Alterations &amp; Perfect Fitting</li>
+          <li>✦ Fashion Consultation</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-indicator">Scroll</div>
+</section>
+
+<!-- ── ABOUT ── -->
+<section id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-img-wrap reveal">
+        <img src="/home/aish/boutique/founder-boutique.png" alt="Angels Boutique craftsmanship" class="about-img-main">
+        <img src="/home/aish/boutique/founder-boutique.png" alt="Bridal detail" class="about-img-accent">
+        <div class="about-badge">
+          <span class="about-badge-num">25+</span>
+          <span class="about-badge-text">Years of<br>Craftsmanship</span>
+        </div>
+      </div>
+      <div class="about-content reveal reveal-delay-1">
+        <span class="section-eyebrow">Our Story</span>
+        <h2>More Than Stitching.<br>A Tradition of Trust.</h2>
+        <div class="thread-divider" style="margin:1.5rem 0;max-width:180px;">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 3c2 7 9 9 9 9s7-2 9-9"/><path d="M12 12v9"/></svg>
+        </div>
+        <p>Since the year 2000, <strong>Angels Boutique</strong> has been a beloved destination for women across Visakhapatnam seeking beautifully crafted garments for every occasion. What began as a small studio driven by passion for precision and design has grown into one of the city's most trusted fashion destinations.</p>
+        <p>At Angels Boutique, every garment is more than cloth and thread — it's a reflection of the woman who wears it. Our founder built this studio on one belief: <strong>every woman deserves to feel extraordinary</strong> in what she wears.</p>
+        <p>With over 25 years of experience and more than 333 reviews on Google, we've had the privilege of dressing thousands of women for their most cherished milestones.</p>
+        <div class="about-features">
+          <div class="about-feat"><span class="about-feat-icon">✦</span><span class="about-feat-text">Personal attention for every client</span></div>
+          <div class="about-feat"><span class="about-feat-icon">✦</span><span class="about-feat-text">Precision custom fitting</span></div>
+          <div class="about-feat"><span class="about-feat-icon">✦</span><span class="about-feat-text">25+ years of craftsmanship</span></div>
+          <div class="about-feat"><span class="about-feat-icon">✦</span><span class="about-feat-text">Multi-generational trust</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── BRAND STORY ── -->
+<section id="story">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-eyebrow">Established 2000</span>
+      <h2 class="section-title" style="color:var(--gold);">Our Journey of Craftsmanship<br>and Trust</h2>
+      <p class="section-sub" style="color:rgba(255,255,255,0.6);">From a single studio to Visakhapatnam's most trusted bridal fashion destination — two and a half decades of dedication.</p>
+    </div>
+    <div class="timeline">
+      <div class="timeline-item reveal">
+        <span class="timeline-year">2000</span>
+        <div class="timeline-dot"></div>
+        <div class="timeline-title">The Beginning</div>
+        <p class="timeline-desc">Angels Boutique opens its doors at NAD Junction, Visakhapatnam — driven by a passion for precision tailoring and custom women's fashion.</p>
+      </div>
+      <div class="timeline-item reveal reveal-delay-1">
+        <span class="timeline-year">2005</span>
+        <div class="timeline-dot"></div>
+        <div class="timeline-title">Bridal Specialization</div>
+        <p class="timeline-desc">Becomes Visakhapatnam's go-to destination for bridal blouses and maggam work, building a loyal client base through word of mouth.</p>
+      </div>
+      <div class="timeline-item reveal reveal-delay-2">
+        <span class="timeline-year">2012</span>
+        <div class="timeline-dot"></div>
+        <div class="timeline-title">Expanding Horizons</div>
+        <p class="timeline-desc">Introduces designer blouses, kids occasion wear, and fashion consultation to serve the complete wardrobe needs of every woman in the family.</p>
+      </div>
+      <div class="timeline-item reveal reveal-delay-3">
+        <span class="timeline-year">2018</span>
+        <div class="timeline-dot"></div>
+        <div class="timeline-title">Digital Recognition</div>
+        <p class="timeline-desc">Achieves 4.5-star rating on Google with 200+ reviews — a testament to consistent craftsmanship and client delight.</p>
+      </div>
+      <div class="timeline-item reveal reveal-delay-4">
+        <span class="timeline-year">Today</span>
+        <div class="timeline-dot"></div>
+        <div class="timeline-title">Trusted Legacy</div>
+        <p class="timeline-desc">25+ years, 1000s of happy clients, 333+ reviews. Angels Boutique remains the most trusted name for women's fashion in Visakhapatnam.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── SERVICES ── -->
+<section id="services">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-eyebrow">What We Create</span>
+      <h2 class="section-title">Our Signature Creations</h2>
+      <p class="section-sub">Each piece is crafted with meticulous care, tailored to your measurements, your style, and your occasion.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card reveal">
+        <img src="/home/aish/boutique/bridalblouse-boutique.png" alt="Bridal Blouse Stitching" class="service-card-img">
+        <div class="service-card-body">
+          <h3 class="service-card-title">Bridal Blouses</h3>
+          <p class="service-card-desc">Custom-fitted bridal blouses crafted to complement your saree and your silhouette. Every stitch reflects your special day.</p>
+        </div>
+      </div>
+      <div class="service-card reveal reveal-delay-1">
+        <img src="/home/aish/boutique/designer-boutique.png" alt="Designer Blouse Stitching" class="service-card-img">
+        <div class="service-card-body">
+          <h3 class="service-card-title">Designer Blouses</h3>
+          <p class="service-card-desc">From contemporary cuts to classic elegance, our designer blouses are crafted to make you the most memorable in the room.</p>
+        </div>
+      </div>
+      <div class="service-card reveal reveal-delay-2">
+        <img src="/home/aish/boutique/maggam-boutique.png" alt="Maggam Work" class="service-card-img">
+        <div class="service-card-body">
+          <h3 class="service-card-title">Maggam Work</h3>
+          <p class="service-card-desc">Exquisite hand-embroidered maggam work that transforms fabric into art — ideal for weddings, festivals, and family functions.</p>
+        </div>
+      </div>
+      <div class="service-card reveal">
+        <img src="/home/aish/boutique/womens-custom-boutique.png" alt="Women's Custom Wear" class="service-card-img">
+        <div class="service-card-body">
+          <h3 class="service-card-title">Women's Custom Wear</h3>
+          <p class="service-card-desc">From churidars to contemporary fusion wear — every garment is tailored exclusively to your measurements and preferences.</p>
+        </div>
+      </div>
+      <div class="service-card reveal reveal-delay-1">
+        <img src="/home/aish/boutique/kids-boutique.png" alt="Kids Occasion Wear" class="service-card-img">
+        <div class="service-card-body">
+          <h3 class="service-card-title">Kids Occasion Wear</h3>
+          <p class="service-card-desc">Adorable, well-crafted occasion wear for your little ones — because every child deserves to look and feel their best at family celebrations.</p>
+        </div>
+      </div>
+      <div class="service-card reveal reveal-delay-2">
+        <img src="/home/aish/boutique/perefct-fit-boutique.png" alt="Alterations" class="service-card-img">
+        <div class="service-card-body">
+          <h3 class="service-card-title">Alterations &amp; Perfect Fitting</h3>
+          <p class="service-card-desc">Expert alterations that breathe new life into existing garments, ensuring every piece fits you like it was made just for you.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── WHY CHOOSE US ── -->
+<section id="why">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-eyebrow">Why Angels Boutique</span>
+      <h2 class="section-title">Why Women Have Trusted<br>Angels Boutique Since 2000</h2>
+    </div>
+    <div class="why-grid">
+      <div class="why-card reveal">
+        <span class="why-icon">🎯</span>
+        <h3 class="why-title">Personalized Consultation</h3>
+        <p class="why-desc">Every client receives our undivided attention. We listen, understand your vision, and suggest what works best for your style and occasion.</p>
+      </div>
+      <div class="why-card reveal reveal-delay-1">
+        <span class="why-icon">📐</span>
+        <h3 class="why-title">Precision Measurements</h3>
+        <p class="why-desc">We take meticulous measurements and account for every unique detail of your body to ensure a flawless, comfortable fit every time.</p>
+      </div>
+      <div class="why-card reveal reveal-delay-2">
+        <span class="why-icon">✂️</span>
+        <h3 class="why-title">Experienced Craftsmanship</h3>
+        <p class="why-desc">With 25+ years of hands-on experience, our skilled artisans bring deep craft knowledge to every garment they create.</p>
+      </div>
+      <div class="why-card reveal">
+        <span class="why-icon">🔍</span>
+        <h3 class="why-title">Attention to Detail</h3>
+        <p class="why-desc">From the alignment of every pleat to the finishing of every seam — no detail is too small to perfect at Angels Boutique.</p>
+      </div>
+      <div class="why-card reveal reveal-delay-1">
+        <span class="why-icon">⏱️</span>
+        <h3 class="why-title">Timely Delivery</h3>
+        <p class="why-desc">We understand that occasions have dates that cannot move. We commit to our timelines and deliver on our promises, every time.</p>
+      </div>
+      <div class="why-card reveal reveal-delay-2">
+        <span class="why-icon">💝</span>
+        <h3 class="why-title">Trusted by Generations</h3>
+        <p class="why-desc">Mothers who came to us as brides now bring their daughters. That multi-generational trust is our greatest achievement.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── GALLERY ── -->
+<section id="gallery">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-eyebrow">Our Portfolio</span>
+      <h2 class="section-title">Our Latest Creations</h2>
+      <p class="section-sub">A glimpse into the artistry, precision, and passion that defines every garment from Angels Boutique.</p>
+    </div>
+    <div class="gallery-filters reveal">
+      <button class="filter-btn active" onclick="filterGallery('all',this)">All</button>
+      <button class="filter-btn" onclick="filterGallery('bridal',this)">Bridal</button>
+      <button class="filter-btn" onclick="filterGallery('designer',this)">Designer Blouses</button>
+      <button class="filter-btn" onclick="filterGallery('maggam',this)">Maggam Work</button>
+      <button class="filter-btn" onclick="filterGallery('kids',this)">Kids Wear</button>
+    </div>
+    <div class="gallery-masonry" id="galleryGrid">
+      <div class="gallery-item" data-cat="bridal" onclick="openLightbox(this)">
+        <img src="/home/aish/boutique/bridal-boutique.png" alt="Bridal Blouse">
+        <div class="gallery-overlay"><span class="gallery-overlay-icon">⊕</span></div>
+      </div>
+      <div class="gallery-item" data-cat="designer" onclick="openLightbox(this)">
+        <img src="/home/aish/boutique/designer-boutique.png" alt="Designer Blouse">
+        <div class="gallery-overlay"><span class="gallery-overlay-icon">⊕</span></div>
+      </div>
+      <div class="gallery-item" data-cat="maggam" onclick="openLightbox(this)">
+        <img src="/home/aish/boutique/maggam-boutique.png" alt="Maggam Work">
+        <div class="gallery-overlay"><span class="gallery-overlay-icon">⊕</span></div>
+      </div>
+      <div class="gallery-item" data-cat="bridal" onclick="openLightbox(this)">
+        <img src="/home/aish/boutique/bridal1-boutique.png" alt="Bridal Wear">
+        <div class="gallery-overlay"><span class="gallery-overlay-icon">⊕</span></div>
+      </div>
+      <div class="gallery-item" data-cat="designer" onclick="openLightbox(this)">
+        <img src="/home/aish/boutique/designer1-boutique.png" alt="Designer Wear">
+        <div class="gallery-overlay"><span class="gallery-overlay-icon">⊕</span></div>
+      </div>
+      <div class="gallery-item" data-cat="kids" onclick="openLightbox(this)">
+        <img src="/home/aish/boutique/kids1-boutique.png" alt="Kids Occasion Wear">
+        <div class="gallery-overlay"><span class="gallery-overlay-icon">⊕</span></div>
+      </div>
+      <div class="gallery-item" data-cat="maggam" onclick="openLightbox(this)">
+        <img src="/home/aish/boutique/maggam-boutique1.png" alt="Maggam Blouse">
+        <div class="gallery-overlay"><span class="gallery-overlay-icon">⊕</span></div>
+      </div>
+      <div class="gallery-item" data-cat="bridal" onclick="openLightbox(this)">
+        <img src="/home/aish/boutique/bridal3-boutique.png" alt="Bridal Craftsmanship">
+        <div class="gallery-overlay"><span class="gallery-overlay-icon">⊕</span></div>
+      </div>
+      <div class="gallery-item" data-cat="designer" onclick="openLightbox(this)">
+        <img src="/home/aish/boutique/designer3-boutique.png" alt="Designer Creation">
+        <div class="gallery-overlay"><span class="gallery-overlay-icon">⊕</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── CUSTOMER EXPERIENCE ── -->
+<section id="experience">
+  <div class="container">
+    <div class="experience-grid">
+      <div class="reveal">
+        <img src="https://images.unsplash.com/photo-1537832816519-689ad163238b?w=700&q=80" alt="Designed around you" class="experience-img">
+      </div>
+      <div class="experience-content reveal reveal-delay-1">
+        <span class="section-eyebrow" style="color:rgba(200,161,90,0.7);">The Angels Experience</span>
+        <h2>Designed Around You</h2>
+        <p>At Angels Boutique, we believe fashion is deeply personal. It isn't just about what's trending — it's about what makes <em>you</em> feel confident, beautiful, and authentically yourself.</p>
+        <p>When you walk through our doors, you don't just get a tailored outfit. You get a conversation — about your occasion, your personality, your vision. Then we translate all of that into stitches, fabric, and form.</p>
+        <blockquote class="experience-quote">
+          "Every woman who sits with us leaves with something created entirely around her — her body, her style, her story."
+        </blockquote>
+        <p>This is why generations of women return to Angels Boutique — not just for the craftsmanship, but for the feeling that someone truly listened and created something uniquely theirs.</p>
+        <a href="#contact" class="btn-primary" style="background:var(--gold);color:var(--charcoal);display:inline-flex;margin-top:1rem;">Begin Your Consultation</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── PROCESS ── -->
+<section id="process">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-eyebrow">How We Work</span>
+      <h2 class="section-title">From Idea to Perfect Fit</h2>
+      <p class="section-sub">A thoughtful, personal process designed to bring your vision to life with precision and care.</p>
+    </div>
+    <div class="process-steps">
+      <div class="process-step reveal">
+        <div class="step-num-wrap"><span class="step-num">1</span></div>
+        <h3 class="step-title">Consultation</h3>
+        <p class="step-desc">Share your vision, occasion, and inspirations. We listen carefully and suggest the best designs for your style.</p>
+      </div>
+      <div class="process-step reveal reveal-delay-1">
+        <div class="step-num-wrap"><span class="step-num">2</span></div>
+        <h3 class="step-title">Measurements</h3>
+        <p class="step-desc">Precise measurements are taken to ensure a perfect, comfortable fit tailored to your unique silhouette.</p>
+      </div>
+      <div class="process-step reveal reveal-delay-2">
+        <div class="step-num-wrap"><span class="step-num">3</span></div>
+        <h3 class="step-title">Design &amp; Craft</h3>
+        <p class="step-desc">Our skilled artisans begin crafting your garment with meticulous attention to every seam, stitch, and detail.</p>
+      </div>
+      <div class="process-step reveal reveal-delay-3">
+        <div class="step-num-wrap"><span class="step-num">4</span></div>
+        <h3 class="step-title">Final Fitting</h3>
+        <p class="step-desc">You try on your creation. Any adjustments needed are made on the spot for an immaculate final fit.</p>
+      </div>
+      <div class="process-step reveal reveal-delay-4">
+        <div class="step-num-wrap"><span class="step-num">5</span></div>
+        <h3 class="step-title">Delivery &amp; Celebration</h3>
+        <p class="step-desc">Your beautifully crafted garment is delivered on time, ready to make you shine at your most special occasion.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── TESTIMONIALS ── -->
+<section id="testimonials">
+  <div class="container">
+    <div class="section-header testimonials-header reveal">
+      <span class="section-eyebrow">Customer Stories</span>
+      <h2 class="section-title">Loved by Hundreds of<br>Happy Customers</h2>
+    </div>
+    <div class="rating-banner reveal">
+      <div style="text-align:center;">
+        <span class="rating-score">4.5</span>
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+        <p class="rating-meta">Google Rating</p>
+      </div>
+      <div style="text-align:center;">
+        <span class="rating-score">333+</span>
+        <div style="color:var(--gold);font-size:0.9rem;">✦ ✦ ✦ ✦ ✦</div>
+        <p class="rating-meta">Verified Reviews</p>
+      </div>
+      <div class="rating-badge">
+        <span>🏆</span> Most Trusted Boutique in Visakhapatnam
+      </div>
+    </div>
+    <div class="testimonials-carousel">
+      <div class="testimonial-card reveal">
+        <div class="testimonial-quote-mark">"</div>
+        <p class="testimonial-text">I got my bridal blouse done here and I couldn't be happier. The fitting was absolutely perfect and the maggam work was exactly as I had imagined. The team really listened to what I wanted and delivered beyond expectations.</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">P</div>
+          <div>
+            <div class="testimonial-name">Priya Lakshmi</div>
+            <div class="testimonial-label">Bridal Client, 2024</div>
+            <div class="stars-small">⭐⭐⭐⭐⭐</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card reveal reveal-delay-1">
+        <div class="testimonial-quote-mark">"</div>
+        <p class="testimonial-text">Angels Boutique has been my go-to for the past 8 years. Whether it's a wedding function blouse or daily wear, the quality and attention to detail is always consistent. My mother recommended them and now I recommend them to everyone.</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">S</div>
+          <div>
+            <div class="testimonial-name">Sunita Reddy</div>
+            <div class="testimonial-label">Loyal Customer since 2016</div>
+            <div class="stars-small">⭐⭐⭐⭐⭐</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card reveal reveal-delay-2">
+        <div class="testimonial-quote-mark">"</div>
+        <p class="testimonial-text">The designer blouse they created for my sister's wedding was truly stunning. Excellent craftsmanship, timely delivery, and the fitting was impeccable. This is the only boutique I trust for special occasions in Vizag.</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">A</div>
+          <div>
+            <div class="testimonial-name">Ananya Sharma</div>
+            <div class="testimonial-label">Wedding Guest, 2023</div>
+            <div class="stars-small">⭐⭐⭐⭐⭐</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card reveal">
+        <div class="testimonial-quote-mark">"</div>
+        <p class="testimonial-text">Got my kids' dresses for a family function stitched here. The fabrics were of excellent quality and the little ones looked adorable. The staff were very accommodating with our last-minute changes too. Highly recommended!</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">D</div>
+          <div>
+            <div class="testimonial-name">Deepika Nair</div>
+            <div class="testimonial-label">Kids Wear Customer</div>
+            <div class="stars-small">⭐⭐⭐⭐⭐</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card reveal reveal-delay-1">
+        <div class="testimonial-quote-mark">"</div>
+        <p class="testimonial-text">The maggam work on my blouse was breathtaking. I had seen it at a relative's wedding and immediately came here. The team was professional, the timeline was met, and the result exceeded all my expectations.</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">M</div>
+          <div>
+            <div class="testimonial-name">Meghana Rao</div>
+            <div class="testimonial-label">Maggam Work Client</div>
+            <div class="stars-small">⭐⭐⭐⭐⭐</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card reveal reveal-delay-2">
+        <div class="testimonial-quote-mark">"</div>
+        <p class="testimonial-text">I've been coming here since 2000 — literally since they opened. I've seen them grow and their quality has only gotten better. A true gem in Visakhapatnam. Trust them completely with any kind of fashion work.</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">L</div>
+          <div>
+            <div class="testimonial-name">Lalitha Devi</div>
+            <div class="testimonial-label">Customer since 2000</div>
+            <div class="stars-small">⭐⭐⭐⭐⭐</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── FAQ ── -->
+<section id="faq">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-eyebrow">Questions Answered</span>
+      <h2 class="section-title">Frequently Asked Questions</h2>
+      <p class="section-sub">Everything you need to know before booking your consultation with us.</p>
+    </div>
+    <div class="faq-list reveal">
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          How long does stitching take at Angels Boutique?
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-answer">
+          <p class="faq-answer-inner">The turnaround time depends on the complexity of your garment. Standard blouses are typically ready in 5–7 days. Bridal blouses and maggam work may take 10–15 days due to the intricacy involved. We always advise clients to book well in advance for wedding-related garments.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          Do you offer bridal blouse stitching?
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-answer">
+          <p class="faq-answer-inner">Absolutely. Bridal blouse stitching is one of our most sought-after specialties. We work with all types of bridal fabrics including silk, kanjivaram, georgette, and more. We also offer bridal consultations to help you choose the right design for your saree and body type.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          Can I bring my own design reference or inspiration images?
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-answer">
+          <p class="faq-answer-inner">Yes, absolutely! We encourage clients to bring reference images, Pinterest boards, magazine clippings, or any design inspiration they have. Our team will work with you to bring your vision to life while adapting it to suit your fabric, measurements, and preferences.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          Do you provide maggam work embroidery?
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-answer">
+          <p class="faq-answer-inner">Yes, maggam work is one of our signature services. We offer a wide range of maggam work designs — from traditional patterns to contemporary styles. You can choose from various thread colors, bead types, and embroidery styles to create something truly unique.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          Do you offer alterations for existing garments?
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-answer">
+          <p class="faq-answer-inner">Yes, we offer expert alteration services for all types of garments. Whether it's resizing a blouse, adjusting a salwar, or modifying an outfit to a new style, our team handles alterations with the same precision and care as our custom pieces.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          How can I book an appointment with Angels Boutique?
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-answer">
+          <p class="faq-answer-inner">You can book an appointment by calling us at <strong>+91 93931 21303</strong>, sending us a WhatsApp message, or filling out the inquiry form on this page. We recommend booking at least 2–3 weeks before your event to ensure adequate time for crafting and any adjustments.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── CONTACT ── -->
+<section id="contact">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-eyebrow">Visit Us</span>
+      <h2 class="section-title">Let's Create Something<br>Beautiful Together</h2>
+      <p class="section-sub">Reach out to begin your journey to a perfectly crafted garment.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="reveal">
+        <h2 style="font-family:'Cormorant Garamond',serif;font-size:2rem;color:var(--maroon);margin-bottom:2rem;">Find Us</h2>
+        <div class="contact-detail">
+          <div class="contact-detail-icon">📍</div>
+          <div class="contact-detail-text">
+            <div class="contact-detail-label">Address</div>
+            <div class="contact-detail-value">Shop No. 9, First Floor, Above Crown Bakery,<br>NAD Junction, Shanti Nagar, NSTL,<br>Visakhapatnam, Andhra Pradesh 530027</div>
+          </div>
+        </div>
+        <div class="contact-detail">
+          <div class="contact-detail-icon">📞</div>
+          <div class="contact-detail-text">
+            <div class="contact-detail-label">Phone</div>
+            <div class="contact-detail-value"><a href="tel:+919393121303" style="color:var(--maroon);text-decoration:none;font-weight:600;">+91 93931 21303</a></div>
+          </div>
+        </div>
+        <div class="contact-detail">
+          <div class="contact-detail-icon">💬</div>
+          <div class="contact-detail-text">
+            <div class="contact-detail-label">WhatsApp</div>
+            <div class="contact-detail-value">
+              <a href="https://wa.me/919393121303?text=Hello%2C%20I%27d%20like%20to%20inquire%20about%20your%20services." target="_blank" class="btn-primary" style="display:inline-flex;font-size:0.72rem;padding:0.6rem 1.2rem;margin-top:0.25rem;">
+                Chat on WhatsApp
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="contact-detail">
+          <div class="contact-detail-icon">⭐</div>
+          <div class="contact-detail-text">
+            <div class="contact-detail-label">Google Rating</div>
+            <div class="contact-detail-value">4.5 Stars • 333+ Reviews</div>
+          </div>
+        </div>
+        <div class="contact-hours">
+          <h4 class="contact-hours-title">Business Hours</h4>
+          <div class="hours-row"><span>Monday – Saturday</span><span>10:00 AM – 8:00 PM</span></div>
+          <div class="hours-row"><span>Sunday</span><span>10:00 AM – 2:00 PM</span></div>
+          <div class="hours-row"><span>Public Holidays</span><span>Please call ahead</span></div>
+        </div>
+        <iframe
+          class="map-embed"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3799.5!2d83.2185!3d17.7384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTfCsDQ0JzE4LjIiTiA4M8KwMTMnMDYuNiJF!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin"
+          allowfullscreen="" loading="lazy"
+          title="Angels Boutique Location Map">
+        </iframe>
+      </div>
+      <div class="contact-form-wrap reveal reveal-delay-1">
+        <h3>Send Us an Inquiry</h3>
+        <form onsubmit="handleFormSubmit(event)">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" placeholder="Enter your full name" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" placeholder="+91 xxxxx xxxxx" required>
+          </div>
+          <div class="form-group">
+            <label for="service">Service Needed</label>
+            <select id="service">
+              <option value="">Select a service</option>
+              <option>Bridal Blouse Stitching</option>
+              <option>Designer Blouse Stitching</option>
+              <option>Maggam Work</option>
+              <option>Women's Custom Wear</option>
+              <option>Kids Occasion Wear</option>
+              <option>Alterations</option>
+              <option>Fashion Consultation</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" placeholder="Tell us about your occasion, design ideas, or any questions you have..."></textarea>
+          </div>
+          <button type="submit" class="btn-submit">Send Inquiry ✦</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── FINAL CTA ── -->
+<section id="cta">
+  <div class="container cta-content">
+    <span class="section-eyebrow" style="color:var(--gold);">Begin Your Journey</span>
+    <h2>Your Perfect Outfit Starts<br>With <em>a Conversation</em></h2>
+    <p>Whether you're preparing for your wedding, a family celebration, a festival, or a special occasion — Angels Boutique is here to create something uniquely and beautifully yours.</p>
+    <div class="cta-btns">
+      <a href="#contact" class="btn-primary">✦ Book Consultation</a>
+      <a href="https://wa.me/919393121303?text=Hello%2C%20I%27d%20like%20to%20book%20a%20consultation." class="btn-outline" target="_blank">WhatsApp Now</a>
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <span class="footer-logo">Angels Boutique</span>
+        <p class="footer-tagline">Crafted to Fit. Designed to Shine. — Est. 2000</p>
+        <p>Visakhapatnam's premier destination for bridal blouse stitching, designer wear, maggam work, and women's custom fashion. Trusted by thousands of women for over 25 years.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#testimonials">Reviews</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Our Services</h4>
+        <ul>
+          <li><a href="#services">Bridal Blouses</a></li>
+          <li><a href="#services">Designer Blouses</a></li>
+          <li><a href="#services">Maggam Work</a></li>
+          <li><a href="#services">Custom Wear</a></li>
+          <li><a href="#services">Kids Occasion Wear</a></li>
+          <li><a href="#services">Alterations</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p>Shop No. 9, First Floor,<br>Above Crown Bakery,<br>NAD Junction, NSTL,<br>Visakhapatnam 530027</p>
+        <br>
+        <p><a href="tel:+919393121303" style="color:var(--gold);text-decoration:none;">+91 93931 21303</a></p>
+        <br>
+        <p>⭐ 4.5 Stars • 333+ Reviews<br>on Google</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Angels Boutique. All rights reserved.</span>
+      <span class="footer-bottom-tagline">25+ Years of Craftsmanship • 333+ Reviews • Trusted Since 2000</span>
+      <span>Visakhapatnam, Andhra Pradesh</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ── FLOATING WHATSAPP ── -->
+<a href="https://wa.me/919393121303?text=Hello%2C%20I%27d%20like%20to%20inquire%20about%20your%20services." class="whatsapp-float" target="_blank" aria-label="WhatsApp Us">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.101.544 4.098 1.508 5.83L0 24l6.335-1.652A11.954 11.954 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.007-1.37l-.361-.214-3.72.976.99-3.616-.235-.375A9.818 9.818 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182c5.43 0 9.818 4.388 9.818 9.818 0 5.43-4.388 9.818-9.818 9.818z"/></svg>
+</a>
+
+<!-- ── MOBILE CTA BAR ── -->
+<div class="mobile-cta-bar">
+  <a href="tel:+919393121303" class="m-call">📞 Call Now</a>
+  <a href="https://wa.me/919393121303" class="m-wa" target="_blank">💬 WhatsApp</a>
+</div>
+
+<!-- ── LIGHTBOX ── -->
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+  <span class="lightbox-close" onclick="closeLightbox()">✕</span>
+  <img id="lightboxImg" src="" alt="Gallery Image">
+</div>
+
+<script>
+// ── NAVBAR SCROLL ──
+const navbar = document.getElementById('navbar');
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 60) navbar.classList.add('scrolled');
+  else navbar.classList.remove('scrolled');
+});
+
+// ── MOBILE MENU ──
+function toggleMenu() {
+  document.getElementById('navLinks').classList.toggle('open');
+}
+document.querySelectorAll('#navLinks a').forEach(a => {
+  a.addEventListener('click', () => document.getElementById('navLinks').classList.remove('open'));
+});
+
+// ── SCROLL REVEAL ──
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+}, { threshold: 0.12 });
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+// ── FAQ ACCORDION ──
+function toggleFaq(el) {
+  const item = el.parentElement;
+  const answer = item.querySelector('.faq-answer');
+  const isOpen = item.classList.contains('open');
+  document.querySelectorAll('.faq-item').forEach(i => {
+    i.classList.remove('open');
+    i.querySelector('.faq-answer').style.maxHeight = '0';
+  });
+  if (!isOpen) {
+    item.classList.add('open');
+    answer.style.maxHeight = answer.scrollHeight + 'px';
+  }
+}
+
+// ── GALLERY FILTER ──
+function filterGallery(cat, btn) {
+  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  document.querySelectorAll('.gallery-item').forEach(item => {
+    if (cat === 'all' || item.dataset.cat === cat) {
+      item.style.display = 'block';
+    } else {
+      item.style.display = 'none';
+    }
+  });
+}
+
+// ── LIGHTBOX ──
+function openLightbox(el) {
+  const img = el.querySelector('img');
+  document.getElementById('lightboxImg').src = img.src;
+  document.getElementById('lightbox').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function closeLightbox() {
+  document.getElementById('lightbox').classList.remove('open');
+  document.body.style.overflow = '';
+}
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
+
+// ── FORM SUBMIT ──
+function handleFormSubmit(e) {
+  e.preventDefault();
+  const name = document.getElementById('name').value;
+  const phone = document.getElementById('phone').value;
+  const service = document.getElementById('service').value;
+  const message = document.getElementById('message').value;
+  const waMsg = encodeURIComponent(`Hello Angels Boutique!\n\nName: ${name}\nPhone: ${phone}\nService: ${service || 'Not specified'}\nMessage: ${message}`);
+  window.open(`https://wa.me/919393121303?text=${waMsg}`, '_blank');
+}
+
+// ── SMOOTH ANCHOR OFFSET ──
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', function(e) {
+    const target = document.querySelector(this.getAttribute('href'));
+    if (target) {
+      e.preventDefault();
+      const offset = 80;
+      window.scrollTo({ top: target.offsetTop - offset, behavior: 'smooth' });
+    }
+  });
+});
+</script>
+</body>
+</html>
